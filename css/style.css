@@ -1,0 +1,749 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto';
+}
+.container
+{
+
+}
+/*-----standard-style-----*/
+:root{
+    --green: #059862;
+    --white: white;
+    --grey: grey;
+    --gainsboro: gainsboro;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.active{
+    background-color: var(--green);
+}
+.bg{
+    height: 40px;
+    width: 100%;
+    background-color: var(--green);
+}
+/*-----resets-----------*/
+.flex-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+/*--------------------header start---------------------------------*/
+.header{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: relative;
+}
+.header .logo h2{
+    height: 100px;
+    width: 100%;
+    color: var(--white);
+    background-color: var(--green);
+    line-height: 100px;
+}
+
+/*------menu start-----*/
+.menu{
+    height: 100px;
+    width: 100%;
+}
+.menu nav ul{
+    display: flex;
+}
+.menu nav ul li a{
+    display: flex;
+    line-height: 100px;
+    font-size: 20px;
+    padding: 0px 20px;
+    
+}
+.menu nav ul li a:hover{
+    background-color: var(--green);
+   
+}
+/*------menu end-----*/
+
+.space{
+    padding-left: 200px;
+}
+
+
+
+/*------promotion start-----*/
+.promotion{
+    height: 100px;
+    width: 100%;
+}
+.promotion nav ul{
+    display: flex;   
+}
+.promotion nav ul li{
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+    margin-right: 10px;
+}
+.promotion nav ul li a{
+    font-size: 20px;
+    padding: 0px 20px;
+}
+.promotion nav ul li:nth-child(1){
+    background-color: black;
+    border-radius: 20px;
+}
+.promotion nav ul li:nth-child(1) a{
+    color: white;
+}
+.promotion nav ul li:nth-child(2) {
+    background-color: pink;
+    color: black;
+    border-radius: 20px;
+}
+.promotion nav ul li:nth-child(3){
+    background-color: #FFF080;
+    color: black;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+/*------promotion end-----*/
+
+
+/*------log start---------*/
+.log a{
+    background-color: var(--green);
+    color: white;
+    height: 40px;
+    width: 100px;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 50px;
+    margin-right: 20px;
+  
+   
+}
+/*------log end----------*/
+.course-and-content{
+    height: 100vh;
+    width: 100vw;
+}
+/*-----course start------*/
+.course{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(73, 72, 72);
+    display: flex;
+    position: sticky;
+   
+}
+.course nav ul{
+    display: flex;
+}
+.course nav ul li a{
+    display: flex;
+    line-height: 40px;
+    padding: 0px 20px;
+    font-size: 20px;
+    color: white;
+}
+.course nav ul li a:hover{
+    background-color: black;
+}
+.course .course-bar{
+    display: flex;
+}
+/*-----course end------*/
+
+/*------------------------header end---------------------*/
+
+/*------------------------content start------------------*/
+
+.content{
+    display: flex;
+    
+}
+
+/*------------------------content end--------------------*/
+
+/*------------------------left sidebar start--------------------*/
+.content-1{
+    width: 15%;
+    height: 100vh;
+}
+.left-sidebar{
+    background-color: var(--gainsboro);  
+   /* position: fixed;
+    overflow-y: scroll;*/ 
+}
+.left-sidebar nav ul{
+   
+}
+.left-sidebar nav ul li{
+    height: 30px;
+    
+}
+.left-sidebar nav ul li a{
+    padding-left: 10px;
+    line-height: 25px;
+    font-size: 18px;
+    color: black;
+    display: flex;
+    text-align: center;
+}
+.left-sidebar nav ul li a:hover{
+    background-color: grey;
+    
+}
+/*------------------------left sidebar end--------------------*/
+
+/*------------------------middle-content start--------------------*/
+.middle-container{
+    width: 70%;
+    height: 100vh;
+	/*margin-left: 15%;*/
+}
+.middle-content{
+    height: 200px;
+    border-bottom: 0.5px solid black;
+}
+.title-holder h1{
+    padding-top: 90px;
+    padding-left: 10px;
+    font-size: 42px;
+}
+.title-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.title-btn button{
+    margin: 10px;
+    height: 40px;
+    width: 90px;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.heading h1{
+    padding: 10px;
+    color: black;
+    font-weight: 100;
+}
+.heading h4{
+    padding: 10px;
+}
+.heading .heading-banner{
+    display: flex;
+    height: 230px;
+    background-color: var(--gainsboro);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 10px solid var(--white);
+}
+.heading-banner .heading-tag{
+    height: 230px;
+    width: 150px;
+    background-color: var(--green);
+}
+.heading-banner .heading-tag h1{
+    color: var(--white);
+}
+.heading-banner .heading-definition p{
+    padding: 12px;
+}
+.heading-definition .heading-btn{
+    height: 40px;
+    width: 300px;
+    background-color: var(--green);
+    color: var(--white);
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.example-container{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: var(--gainsboro);
+    margin-bottom: 20px;
+    border-left: 10px solid var(--white);
+}
+.example-heading h4{
+    font-size: 26px;
+}
+.code{
+    margin-top: 20px;
+    padding: 2px;
+    background-color: var(--white);
+    border-left: 4px solid var(--green);
+}
+.rules{
+    display: flex;
+}
+.code h4{
+    color: brown;
+    font-size: 18px;
+    font-weight: 100;
+}
+.symbol{
+    color: blue;
+    font-size: 20px;
+    
+}
+
+.editor-btn{
+    height: 40px;
+    width: 150px;
+    background-color: var(--green);
+    color: var(--white);
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding-top: 10px;
+}
+.quotes{
+    height: 80px;
+    background-color: blanchedalmond;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border-left: 6px solid var(--white);
+}
+.quotes h3{
+    font-size: 16px;
+    font-style: italic;
+}
+.quotes p{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.w-content{
+    border-bottom: 1px solid var(--grey);
+}
+.w-content h1{
+    font-weight: 300;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+.w-content p{
+    padding: 5px 10px;
+}
+.crash-course{
+    margin-top: 10px;
+}
+.crash-course h1{
+    font-weight: 300;
+    margin: 15px 0px;
+    padding-left: 10px;
+}
+.crash-course p{
+    padding-left: 10px;
+}
+.project-1{
+    height: 400px;
+    padding-top: 10px;
+    margin-top: 20px;
+    background-color: var(--gainsboro);
+    flex-direction: column;
+    border-left: 10px solid var(--white);
+}
+.project-1 p{
+    padding: 10px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+.project-1 img{
+    height: 300px;
+    
+}
+
+.project-2{
+    height: 400px;
+    padding-top: 10px;
+    margin-top: 20px;
+    background-color: var(--gainsboro);
+    flex-direction: column;
+    border-left: 10px solid var(--white);
+}
+.project-2{
+    padding: 10px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+.project-2 img{
+    height: 300px;
+    
+}
+.project-btn{
+    margin: 20px;
+    height: 50px;
+    background-color: var(--green);
+    color: var(--white);
+    line-height: 50px;
+    text-align: center;
+}
+
+.middle-advertisement{
+    height: 100px;
+}
+
+.distribution{
+    height: 70px;
+    border-top: 1px solid var(--gainsboro);
+    border-bottom: 1px solid var(--gainsboro);
+    
+}
+.distribution button{
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    margin: 10px 17px;
+    border-radius: 10px;
+    border: none;
+}
+.distribution button p{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top-vision{
+    display: flex;
+    border-bottom: 1px solid var(--gainsboro);
+    padding-bottom: 20px;
+}
+.top-vision h4{
+    font-size: 18px;
+    padding: 20px 30px;
+}
+.top-vision .tutorial-list{
+    text-align: center;
+}
+.top-vision .tutorial-list p{
+    font-size: 14px;
+    padding: 2px;
+}
+
+.top-vision h4{
+    font-size: 18px;
+    padding: 20px 30px;
+}
+.top-vision .reference-list{
+    text-align: center;
+}
+.top-vision .reference-list p{
+    font-size: 14px;
+    padding: 2px;
+}
+.forum h3{
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--grey);
+    padding: 10px;
+}
+.forum h4{
+    color: var(--grey);
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+}
+.forum h5{
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--grey);
+    padding: 10px;
+}
+/*------------------------middle-content end--------------------*/
+
+/*------------------------right-sidebar start--------------------*/
+.right-sidebar{
+    width: 15%;
+    height: 200px;
+    padding: 10px;
+}
+.advertisement-1{
+    height: 400px;
+    width: 180px;
+}
+.status{
+    height: 150px;
+    width: 180px;
+    background-color: pink;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.status h1{
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+.status h2{
+    font-size: 24px;
+    text-align: center;
+}
+.offer{
+    height: 150px;
+    background-color: black;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.offer p{
+    font-size: 20px;
+    color: var(--white);
+    text-align: center;
+    text-decoration: line-through;
+}
+.offer h1{
+    font-size: 24px;
+    color: pink;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+.offer a{
+    height: 30px;
+    width: 100px;
+    background-color: var(--green);
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--white);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+.advertisement-2{
+    height: 250px;
+    width: 180px;
+    background-color: black;
+    border-radius: 10px;
+}
+.announcement p{
+    font-size: 22px;
+    color: pink;
+    padding: 20px;
+    text-align: center;
+}
+.enroll{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+.enroll h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    height: 70px;
+    width: 70px;
+    color: var(--white);
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+.enroll button{
+    color: var(--white);
+    background-color: var(--green);
+    height: 50px;
+    width: 180px;
+    margin-top: 10px;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 20px;
+}
+.advertisement-3{
+    margin-top: 60px;
+    height: 250px;
+    width: 180px;
+    background-color: black;
+    border-radius: 10px;
+}
+.card-title{
+    padding: 10px;
+    color: var(--white);
+}
+.card-title button{
+    margin-top: 20px;
+    margin-left: 15px;
+    height: 30px;
+    width: 120px;
+    background-color: pink;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.card-content{
+    height: 80px;
+    width: 170px;
+    background-color: var(--white);
+    padding: 0px 30px;
+    margin-left: 5px;
+    list-style: disc;
+    border-radius: 5px solid black;
+}
+.card-upgrade button{
+    margin-top: 20px;
+    margin-left: 25px;
+    height: 30px;
+    width: 120px;
+    background-color: yellow;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/*------------------------right-sidebar end--------------------*/
+
+
+
+@media (max-width:1060px){
+    .promotion{
+        display: none;
+    }
+    .left-sidebar nav ul li a{
+        font-size: 14px;
+    }
+}
+@media (max-width:826px){
+    .promotion{
+        display: none;
+    }
+    .left-sidebar nav ul li a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:768px){
+    .header,.course{
+        display: none;
+    }
+    .course nav ul .bar{
+        display: block;
+    }
+    .left-sidebar nav ul{
+        position: fixed;
+        left: 0;
+        height: 100vh;
+        left: -100%;
+        
+    }
+   .left-sidebar nav ul.slide{
+        left: 0;
+   }
+  /* 
+   .bar{
+    float: right;
+    padding-right: 20px;
+    padding-top: 12px;
+}
+.bar .line{
+    width: 15px;
+    height: 3px;
+    background-color: wheat;
+    margin-bottom: 5px;
+    display: block;
+}
+*/
+    .middle-container{
+        
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .distribution{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-vision{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .forum{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading-banner .heading-definition p{
+        padding: 3px;
+    }
+    .heading-definition .heading-btn{
+        height: 40px;
+        width: 300px;
+        background-color: var(--green);
+        color: var(--white);
+        margin-left: 5px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .rules h4{
+        font-size: 18px;
+    }
+    .right-sidebar{
+        display: none;
+    }
+}
+
+/*
+@media (max-width:644px){
+    .middle-container{
+        margin: 0px 100px;
+    }
+    .right-sidebar{
+        display: none;
+    }
+
+    .distribution,.top-vision,.forum{ 
+        margin: 0px -100px;
+    }
+
+}
+@media (max-width:511px){
+    .heading-definition p{
+        font-size: 16px;
+    }
+    .heading-definition .heading-btn{
+        display: none;
+    }
+}
+*/
+
